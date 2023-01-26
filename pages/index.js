@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      Hello1
+      Hello2
     </>
   )
 }
