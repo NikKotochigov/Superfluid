@@ -6,7 +6,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        CFLOWery | Stream
+      FLOWery | Bridge
       </title>
     </Head>
         <Box
@@ -21,7 +21,7 @@ const Page = () => (
           sx={{ mb: 3 }}
           variant="h4"
         >
-          STREAM
+          BRIDGE
         </Typography>
         <SettingsNotifications />
         <Box sx={{ pt: 3 }}>
@@ -32,10 +32,5 @@ const Page = () => (
   </>
 );
 
-// Page.getLayout = (page) => (
-//   <DashboardLayout>
-//     {page}
-//   </DashboardLayout>
-// );
 
 export default Page;

@@ -2,12 +2,23 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import { Box, Button, Container, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
-const Page = () => (
+const Page = () => {
+  const router = useRouter();
+useEffect(() => {
+  setTimeout(() =>{
+    router.push('/')
+  }, 2000)
+}, [])
+
+  return (
   <>
     <Head>
       <title>
-        404 | Material Kit
+       FLOWary | 404
       </title>
     </Head>
     <Box
@@ -43,9 +54,11 @@ const Page = () => (
             Whichever it is, try using the navigation
           </Typography>
           <Box sx={{ textAlign: 'center' }}>
-            <img
+            <Image
               alt="Under development"
               src="/static/images/undraw_page_not_found_su7k.svg"
+              width={350}
+              height={350}
               style={{
                 marginTop: 50,
                 display: 'inline-block',
@@ -59,7 +72,7 @@ const Page = () => (
             passHref
           >
             <Button
-              component="a"
+              // component="a"
               startIcon={(<ArrowBackIcon fontSize="small" />)}
               sx={{ mt: 3 }}
               variant="contained"
@@ -71,6 +84,6 @@ const Page = () => (
       </Container>
     </Box>
   </>
-);
+);}
 
 export default Page;
