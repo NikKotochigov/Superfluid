@@ -1,14 +1,15 @@
 import Head from 'next/head';
 import { Box, Container, Typography} from '@mui/material';
-import { SettingsNotifications } from '../components/layout/settings-notifications';
+import { SettingsNotifications } from '../src/components/layout/settings-notifications';
 
 const Page = () => (
   <>
     <Head>
       <title>
-      FLOWery | Activity history
+      FLOWery | Wrap
       </title>
     </Head>
+ 
         <Box
       component="main"
       sx={{
@@ -21,7 +22,7 @@ const Page = () => (
           sx={{ mb: 3 }}
           variant="h4"
         >
-          STREAM
+          WRAP
         </Typography>
         <SettingsNotifications />
         <Box sx={{ pt: 3 }}>
