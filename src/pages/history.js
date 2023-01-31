@@ -6,7 +6,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        CFLOWery | Stream
+      FLOWery | Activity history
       </title>
     </Head>
         <Box
@@ -32,10 +32,5 @@ const Page = () => (
   </>
 );
 
-// Page.getLayout = (page) => (
-//   <DashboardLayout>
-//     {page}
-//   </DashboardLayout>
-// );
 
 export default Page;
